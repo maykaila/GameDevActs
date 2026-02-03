@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://clsa7lunrtcik"]
+
+[ext_resource type="Script" uid="uid://dhdq8rij4dcvp" path="res://label_3d.gd" id="1_mnpe5"]
+
+[node name="Main" type="Node3D" unique_id=1741729717]
+
+[node name="Label3D" type="Label3D" parent="." unique_id=862447867]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3741138, 0.5935186, -0.1650908)
+modulate = Color(0.83807343, 2.4065375e-06, 0.4333812, 1)
+outline_modulate = Color(1, 0.8138078, 0.744537, 1)
+text = "hello world"
+font_size = 42
+script = ExtResource("1_mnpe5")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=961135418]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37171602, 0.4740538, 0.9990841)
