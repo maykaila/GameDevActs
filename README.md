@@ -12,7 +12,7 @@
 **Date:** February 4, 2026
 
 ### Description
-This project demonstrates a basic Godot 2D scene featuring a "Hello World" label and a Sprite2D node that moves programmatically using GDScript. 
+This activity lets us explore Godot's functions. In my screenshot, you can see a simple "Hello world" in a 3D space and is animated to bounce.
 
 ### Screenshots
 <p align="center">
