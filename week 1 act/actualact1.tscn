@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://clsa7lunrtcik"]
 
-[ext_resource type="Script" uid="uid://dhdq8rij4dcvp" path="res://label_3d.gd" id="1_mnpe5"]
+[ext_resource type="Script" uid="uid://dhdq8rij4dcvp" path="res://week 1 act/label_3d.gd" id="1_mnpe5"]
 
 [node name="Main" type="Node3D" unique_id=1741729717]
 
