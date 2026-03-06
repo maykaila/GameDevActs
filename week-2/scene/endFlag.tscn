@@ -100,4 +100,14 @@ frame_progress = 0.82711333
 position = Vector2(2, 9)
 shape = SubResource("RectangleShape2D_h6b8c")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=762388778]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=445077672]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

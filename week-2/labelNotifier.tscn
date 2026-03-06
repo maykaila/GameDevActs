@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cx61a5cwmc5s0"]
+
+[ext_resource type="Script" uid="uid://bxj7juqr5r6t0" path="res://scripts/levelNotifier.gd" id="1_ycdmf"]
+
+[node name="labelNotifier" type="CanvasLayer" unique_id=640042332]
+script = ExtResource("1_ycdmf")
+
+[node name="Label" type="Label" parent="." unique_id=1919676853]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Level Name"
