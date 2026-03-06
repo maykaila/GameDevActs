@@ -4,7 +4,9 @@
 ---
 
 ## 📂 Activity Index
-1. [Week 1](#activity-1-simple-scene-with-a-moving-node)
+1. [Week 1](#week-1-simple-scene-with-a-moving-node)
+2. [Week 2 - Activity 1](#week-2-activity-1-basic-gameplay-mechanics)
+3. [Week 2 - Activity 2](#week-2-activity-2-level-design)
 
 ---
 
@@ -32,9 +34,18 @@ https://github.com/user-attachments/assets/d91cc1a7-cabc-4862-88b4-7a8bb3154206
 **Date:** February 20, 2026
 
 ### Description
-
+This activity lets us learn how to make our player move.
 
 ### Screenshots
 <img width="1162" height="659" alt="Screenshot 2026-02-20 183941" src="https://github.com/user-attachments/assets/7f3564f7-ad6d-4f07-a2e4-41e4b64cd441" />
 
+---
+
+## 🎮 Week 2 Activity 2: Level Design
+**Finished Date:** March 6, 2026
+
+### Description
+This activity focuses on level designs, such as creating the level, adding traps and obstacles, as well as player deaths and scene transistions between levels.
+
 ### Video
+https://github.com/user-attachments/assets/6515a269-9215-47c7-b8ad-24809ea671ee
