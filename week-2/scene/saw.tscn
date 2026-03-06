@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://cdgep76svl5v3"]
+
+[ext_resource type="Texture2D" uid="uid://boegs0gx3w5cp" path="res://assets/Free/Traps/Saw/On (38x38).png" id="1_gdafy"]
+[ext_resource type="PackedScene" uid="uid://v3331cyf4782" path="res://scene/killzone.tscn" id="2_wthbu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wthbu"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2bwx"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pjta"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0lh8"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2m23q"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_piasn"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ueuyr"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv4h5"]
+atlas = ExtResource("1_gdafy")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hu8mg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wthbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2bwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pjta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0lh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2m23q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_piasn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ueuyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv4h5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i2bwx"]
+radius = 11.0
+
+[node name="saw" type="Node2D" unique_id=1762621220]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1125278943]
+position = Vector2(-8, 8)
+scale = Vector2(0.57894737, 0.57894737)
+sprite_frames = SubResource("SpriteFrames_hu8mg")
+autoplay = "default"
+frame_progress = 0.49267706
+
+[node name="killzone" parent="." unique_id=2125823340 instance=ExtResource("2_wthbu")]
+position = Vector2(-8, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1988329059]
+shape = SubResource("CircleShape2D_i2bwx")

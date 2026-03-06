@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://lswmp3sheusa"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xucoq"]
+load_path = "res://.godot/imported/platforms.png-773f98c154d5c3b035ad5e3aa72d67ff.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wfaay"]
+size = Vector2(32, 8)
+
+[node name="platform" type="AnimatableBody2D" unique_id=1344716777]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1507576618]
+texture_filter = 1
+texture = SubResource("CompressedTexture2D_xucoq")
+region_enabled = true
+region_rect = Rect2(16, 32, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1976039779]
+shape = SubResource("RectangleShape2D_wfaay")
+one_way_collision = true
