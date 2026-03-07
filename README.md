@@ -4,10 +4,10 @@
 ---
 
 ## 📂 Activity Index
-1. [Week 1](#week-1-simple-scene-with-a-moving-node)
-2. [Week 2 - Activity 1](#week-2-activity-1-basic-gameplay-mechanics)
-3. [Week 2 - Activity 2](#week-2-activity-2-level-design)
-4. [Week 3 - Activity 1](#)
+1. [Week 1](#-week-1-simple-scene-with-a-moving-node)
+2. [Week 2 - Activity 1](#-week-2-activity-1-basic-gameplay-mechanics)
+3. [Week 2 - Activity 2](#-week-2-activity-2-level-design)
+4. [Week 3 - Activity 1](#-week-3-activity-1-uiux--audio)
 5. [Credits](#credits)
 
 ---
@@ -16,12 +16,12 @@
 **Date:** February 4, 2026
 
 ### Description
-This project demonstrates a basic Godot 2D scene featuring a "Hello World" label and a Sprite2D node that moves programmatically using GDScript. 
+This project demonstrates a basic Godot 2D scene featuring a "Hello World" label and a Sprite2D node that moves programmatically using GDScript. 
 
 ### Features
 - **Hello World:** A standard text label displayed on the scene.
 - **Automated Movement:** A 3D
-- **Scripting:** 
+- **Scripting:** 
 
 ### Screenshots
 <img width="1217" height="800" alt="Screenshot 2026-02-03 152133" src="https://github.com/user-attachments/assets/8203f615-e904-4c35-8b43-11096420fbee" />
@@ -65,17 +65,17 @@ This activity taught me how to add sound effects/audio in my game, it also taugh
 ---
 
 ## Credits
-**Assets:** 
-- [Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)
-  *Asset/s used:*
-  - World Tileset & Other Sprites
-  - Background Music
-  - SFX
-  - Font
-- [Pixel Adventure by Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)
-  *Asset/s used:*
-  - Pink Man
-  - Traps
-- [Pixel Icons and Game controller 2](https://disven.itch.io/pixel-icons-and-game-controller-2)
-  *Asset/s used:*
-  - Heart
+**Assets:** 
+- [Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)/br
+  *Asset/s used:*
+  - World Tileset & Other Sprites
+  - Background Music
+  - SFX
+  - Font
+- [Pixel Adventure by Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)/br
+  *Asset/s used:*
+  - Pink Man
+  - Traps
+- [Pixel Icons and Game controller 2](https://disven.itch.io/pixel-icons-and-game-controller-2)/br
+  *Asset/s used:*
+  - Heart
