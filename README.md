@@ -64,11 +64,12 @@ This activity taught me how to add sound effects/audio in my game, it also taugh
 
 ---
 
-## Credits
+## 🏆 Credits
 
-**Assets:** * **[Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)**
-    * *Used:* World Tileset, Sprites, Background Music, SFX, and Font.
+### 🎨 Visual & Audio Assets
+* **[Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)**
+    * **Assets used:** World Tileset, Background Music, SFX, and UI Fonts.
 * **[Pixel Adventure by Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)**
-    * *Used:* Pink Man character and Traps.
+    * **Assets used:** "Pink Man" character sprites and environment traps.
 * **[Pixel Icons and Game controller 2](https://disven.itch.io/pixel-icons-and-game-controller-2)**
-    * *Used:* Heart UI icons.
+    * **Assets used:** Heart icons for the health system.
