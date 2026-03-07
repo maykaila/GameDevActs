@@ -6,6 +6,7 @@ extends Node
 var points = 0
 var lives = 3
 
+	
 func _process(_delta):
 	var current_scene = get_tree().current_scene
 	if not current_scene:
@@ -16,7 +17,15 @@ func _process(_delta):
 
 	if "mainmenu" in s_name:
 		self.visible = false
-		$UI.visible = false # CRITICAL: Hide the child directly to bypass CanvasLayer
+		$UI.visible = false 
+		
+		# RESET DATA FOR NEXT GAME
+		if lives != 3:
+			lives = 3
+			points = 0
+			for h in hearts:
+				if h != null:
+					h.show()
 	elif "level1" in s_name:
 		self.visible = true
 		$UI.visible = true
@@ -29,6 +38,10 @@ func _process(_delta):
 		$UI/Hearts.visible = true
 
 func _ready():
+	# Ensure hearts are visible whenever a new level starts
+	for h in hearts:
+		if h != null:
+			h.show()
 	update_ui()
 	
 func update_ui():
@@ -40,20 +53,13 @@ func decreaseHealth():
 	points = 0
 	update_ui()
 	
+	# Correct Math: Hide hearts based on remaining lives
 	for h in 3:
-		if(h < lives):
+		if h < lives:
 			hearts[h].show()
 		else:
 			hearts[h].hide()
-			
-	if lives > 0:
-		get_tree().call_deferred("reload_current_scene") # Prevents physics crash
-	else:
-		# Reset everything for a fresh start from the menu
-		lives = 3
-		for h in 3:
-			hearts[h].show()
-		get_tree().change_scene_to_file("res://scene/mainmenu.tscn")
+
 
 func addPoint():
 	points += 1
