@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://l0ticgei0wvj"]
+
+[ext_resource type="Script" uid="uid://bu60hpl4cj8wb" path="res://scripts/game_manager.gd" id="1_5nt5s"]
+[ext_resource type="PackedScene" uid="uid://w82ayrd1htop" path="res://scene/UI.tscn" id="1_mmka4"]
+
+[node name="HUD" type="CanvasLayer" unique_id=99162294 node_paths=PackedStringArray("hearts")]
+script = ExtResource("1_5nt5s")
+hearts = [NodePath("UI/Hearts/HBoxContainer/heart"), NodePath("UI/Hearts/HBoxContainer/heart2"), NodePath("UI/Hearts/HBoxContainer/heart3")]
+
+[node name="UI" parent="." unique_id=1410792490 instance=ExtResource("1_mmka4")]
+
+[editable path="UI"]

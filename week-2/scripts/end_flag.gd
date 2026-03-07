@@ -3,7 +3,7 @@ extends Area2D
 @export var target_level: PackedScene
 @onready var color_rect = $CanvasLayer/ColorRect
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(body: Node2D):
 	# Optional: ensure only player triggers it
 	$CollisionShape2D.set_deferred("disabled", true)
 

@@ -9,8 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://lyq6vjrgibad" path="res://scene/platform2.tscn" id="6_lnov8"]
 [ext_resource type="PackedScene" uid="uid://cdgep76svl5v3" path="res://scene/saw.tscn" id="7_lnov8"]
 [ext_resource type="PackedScene" uid="uid://ccj1kv64ujbxc" path="res://scene/coin.tscn" id="9_yilmc"]
-[ext_resource type="FontFile" uid="uid://b0b10vfa05sbu" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="11_68ptg"]
-[ext_resource type="Script" uid="uid://bu60hpl4cj8wb" path="res://scripts/game_manager.gd" id="11_vwck2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nk78g"]
 texture = ExtResource("1_nluny")
@@ -290,7 +288,7 @@ _data = {
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vwck2"]
 
-[node name="Game" type="Node2D" unique_id=1873112386]
+[node name="Level2" type="Node2D" unique_id=1873112386]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=206700449]
 tile_set = SubResource("TileSet_qpk70")
@@ -397,32 +395,3 @@ position = Vector2(290, 384)
 
 [node name="coin7" parent="coins" unique_id=1514427525 instance=ExtResource("9_yilmc")]
 position = Vector2(1028, 314)
-
-[node name="GameManager" type="Node" parent="." unique_id=75668758]
-unique_name_in_owner = true
-script = ExtResource("11_vwck2")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=661229348]
-
-[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=863872214]
-anchors_preset = -1
-anchor_right = 0.055555556
-anchor_bottom = 0.026234567
-offset_left = 18.0
-offset_top = 18.0
-offset_right = 127.0
-offset_bottom = 59.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CoinsLabel" type="Label" parent="CanvasLayer/Panel" unique_id=1410706405]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("11_68ptg")
-text = "Coins: 0"
-horizontal_alignment = 1
-vertical_alignment = 1

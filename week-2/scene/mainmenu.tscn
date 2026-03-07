@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://b65b3d1nwaavl"]
+
+[ext_resource type="Texture2D" uid="uid://csw4ed6yvepe5" path="res://assets/Free/Background/Pink.png" id="1_h8uk4"]
+[ext_resource type="Script" uid="uid://j386grf311c6" path="res://scripts/mainmenu.gd" id="1_n5p00"]
+[ext_resource type="FontFile" uid="uid://b0b10vfa05sbu" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_n5p00"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_eekkd"]
+texture = ExtResource("1_h8uk4")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.48178947, 0.48178947, 0.48178947, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vh50t"]
+bg_color = Color(0.9882353, 0.54509807, 0.7254902, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 9
+shadow_color = Color(0, 0, 0, 0.1882353)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n5p00"]
+bg_color = Color(0.99215686, 0.73333335, 0.827451, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 9
+shadow_color = Color(0, 0, 0, 0.1882353)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eekkd"]
+bg_color = Color(0.96862745, 0.2901961, 0.61960787, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 9
+shadow_color = Color(0, 0, 0, 0.1882353)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_egvns"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3l6v1"]
+bg_color = Color(0.9930517, 0.73518807, 0.82936496, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 9
+shadow_color = Color(0, 0, 0, 0.1882353)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8uk4"]
+bg_color = Color(0.96982366, 0.2919409, 0.6180674, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 9
+shadow_color = Color(0, 0, 0, 0.1882353)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_omfg1"]
+
+[node name="MainMenu" type="Control" unique_id=1175605065]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n5p00")
+
+[node name="Panel" type="Panel" parent="." unique_id=1771616718]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_eekkd")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1470357391]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.5
+offset_top = -92.625
+offset_right = 178.5
+offset_bottom = 92.625
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="start" type="Button" parent="VBoxContainer" unique_id=129253213]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_n5p00")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_vh50t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n5p00")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eekkd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_egvns")
+text = "Start"
+
+[node name="quit" type="Button" parent="VBoxContainer" unique_id=1628531340]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_n5p00")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_vh50t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3l6v1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h8uk4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_omfg1")
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_level_pressed"]

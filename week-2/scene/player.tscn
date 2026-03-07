@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://dfsquy7tff346" path="res://assets/Free/Main Characters/Pink Man/Double Jump (32x32).png" id="2_s4jxa"]
 [ext_resource type="Texture2D" uid="uid://bs85ukif1w37i" path="res://assets/Free/Main Characters/Pink Man/Jump (32x32).png" id="3_s4jxa"]
 [ext_resource type="Texture2D" uid="uid://bysb5bj8t65p2" path="res://assets/Free/Main Characters/Pink Man/Run (32x32).png" id="4_oh5ij"]
+[ext_resource type="AudioStream" uid="uid://wqona7kqre51" path="res://assets/brackeys_platformer_assets/sounds/jump.wav" id="6_oh5ij"]
+[ext_resource type="AudioStream" uid="uid://bm3yi5cfiei13" path="res://assets/sfx_grass_1.wav" id="7_hp4bs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oh5ij"]
 atlas = ExtResource("2_s4jxa")
@@ -255,3 +257,11 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=546705462]
 position = Vector2(0, -12)
 shape = SubResource("CircleShape2D_bwjto")
+
+[node name="sfxJump" type="AudioStreamPlayer2D" parent="." unique_id=2052356407]
+stream = ExtResource("6_oh5ij")
+bus = &"SFX"
+
+[node name="sfxWalk" type="AudioStreamPlayer2D" parent="." unique_id=70464095]
+stream = ExtResource("7_hp4bs")
+bus = &"SFX"

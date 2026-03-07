@@ -11,9 +11,18 @@ config_version=5
 [application]
 
 config/name="week2"
-run/main_scene="uid://f4cx6fof7vlr"
+run/main_scene="uid://b65b3d1nwaavl"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://boflrfqrtaofa"
+
+[autoload]
+
+MainMusic="*uid://b5fqdh3yvt4l6"
+GameManager="*uid://l0ticgei0wvj"
 
 [input]
 

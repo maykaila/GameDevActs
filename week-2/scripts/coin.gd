@@ -1,9 +1,9 @@
 extends Area2D
 
-@onready var game_manager = %GameManager
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
-func _on_body_entered(body: Node2D):
-	if (body.name == "player"):
-		queue_free()
-		game_manager.addPoint()
-	
+func _on_body_entered(_body: Node2D):
+	$CollisionShape2D.set_deferred("disabled", true)
+	if (_body.name == "player"):
+		animation_player.play("coinpickup")
+		GameManager.addPoint()
