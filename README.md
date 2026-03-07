@@ -7,6 +7,8 @@
 1. [Week 1](#week-1-simple-scene-with-a-moving-node)
 2. [Week 2 - Activity 1](#week-2-activity-1-basic-gameplay-mechanics)
 3. [Week 2 - Activity 2](#week-2-activity-2-level-design)
+4. [Week 3 - Activity 1](#)
+5. [Credits](#credits)
 
 ---
 
@@ -49,3 +51,31 @@ This activity focuses on level designs, such as creating the level, adding traps
 
 ### Video
 https://github.com/user-attachments/assets/6515a269-9215-47c7-b8ad-24809ea671ee
+
+---
+
+## 🎮 Week 3 Activity 1: UI/UX & Audio
+**Finished Date:** March 7, 2026
+
+### Description
+This activity taught me how to add sound effects/audio in my game, it also taught me what an Autoload is since I Autoloaded my UI and background music.
+
+### Video
+
+---
+
+## Credits
+**Assets:** 
+- [Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)
+  *Asset/s used:*
+  - World Tileset & Other Sprites
+  - Background Music
+  - SFX
+  - Font
+- [Pixel Adventure by Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)
+  *Asset/s used:*
+  - Pink Man
+  - Traps
+- [Pixel Icons and Game controller 2](https://disven.itch.io/pixel-icons-and-game-controller-2)
+  *Asset/s used:*
+  - Heart
