@@ -8,7 +8,8 @@
 2. [Week 2 - Activity 1](#-week-2-activity-1-basic-gameplay-mechanics)
 3. [Week 2 - Activity 2](#-week-2-activity-2-level-design)
 4. [Week 3 - Activity 1](#-week-3-activity-1-uiux--audio)
-5. [Credits](#credits)
+5. [Week 3 - Activity 2](#-week-3-activity-2-ai--enemies)
+6. [Credits](#credits)
 
 ---
 
@@ -64,11 +65,21 @@ This activity taught me how to add sound effects/audio in my game, it also taugh
 
 ---
 
+## 🎮 Week 3 Activity 2: AI & Enemies
+**Finished Date:** March 7, 2026
+
+### Description
+This activity focuses on the enemies. 
+
+### Video
+
+---
+
 ## 🏆 Credits
 
 ### 🎨 Visual & Audio Assets
 * **[Brackeys' Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)**
-    * **Assets used:** World Tileset, Background Music, SFX, and UI Fonts.
+    * **Assets used:** World Tileset, Background Music, SFX, UI Fonts, and Slime Enemy.
 * **[Pixel Adventure by Pixel Frog](https://pixelfrog-assets.itch.io/pixel-adventure-1)**
     * **Assets used:** "Pink Man" character sprites and environment traps.
 * **[Pixel Icons and Game controller 2](https://disven.itch.io/pixel-icons-and-game-controller-2)**
