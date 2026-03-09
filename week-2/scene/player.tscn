@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bysb5bj8t65p2" path="res://assets/Free/Main Characters/Pink Man/Run (32x32).png" id="4_oh5ij"]
 [ext_resource type="AudioStream" uid="uid://wqona7kqre51" path="res://assets/brackeys_platformer_assets/sounds/jump.wav" id="6_oh5ij"]
 [ext_resource type="AudioStream" uid="uid://bm3yi5cfiei13" path="res://assets/sfx_grass_1.wav" id="7_hp4bs"]
+[ext_resource type="AudioStream" uid="uid://bjd2bbbwrxglp" path="res://assets/classic_hurt.mp3" id="9_2fvbb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oh5ij"]
 atlas = ExtResource("2_s4jxa")
@@ -264,4 +265,8 @@ bus = &"SFX"
 
 [node name="sfxWalk" type="AudioStreamPlayer2D" parent="." unique_id=70464095]
 stream = ExtResource("7_hp4bs")
+bus = &"SFX"
+
+[node name="sfxHurt" type="AudioStreamPlayer2D" parent="." unique_id=520230686]
+stream = ExtResource("9_2fvbb")
 bus = &"SFX"

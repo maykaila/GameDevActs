@@ -8,6 +8,7 @@ const MAX_JUMPS = 2
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var sfx_jump: AudioStreamPlayer2D = $sfxJump
 @onready var sfx_walk: AudioStreamPlayer2D = $sfxWalk
+@onready var sfx_hurt: AudioStreamPlayer2D = $sfxHurt
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

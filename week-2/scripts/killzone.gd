@@ -5,15 +5,13 @@ extends Area2D
 func _on_body_entered(_body: Node2D):
 	if _body.name == "player" or _body.name == "Player":
 		print("You died.")
+		
+		if _body.has_node("sfxHurt"):
+			_body.get_node("sfxHurt").play()
+		
 		Engine.time_scale = 0.5
-		
-		# Prevent the player from falling forever while waiting for the timer
 		_body.get_node("CollisionShape2D").set_deferred("disabled", true)
-		
-		# Update the data in GameManager
 		GameManager.decreaseHealth()
-		
-		# Start the slow-motion delay
 		timer.start()
 
 func _on_timer_timeout():
