@@ -62,6 +62,7 @@ https://github.com/user-attachments/assets/6515a269-9215-47c7-b8ad-24809ea671ee
 This activity taught me how to add sound effects/audio in my game, it also taught me what an Autoload is since I Autoloaded my UI and background music.
 
 ### Video
+https://github.com/user-attachments/assets/3c5cfd91-2bdf-42e9-986c-2632e42cb2e8
 
 ---
 
@@ -71,7 +72,8 @@ This activity taught me how to add sound effects/audio in my game, it also taugh
 ### Description
 This activity focuses on the enemies. 
 
-### Video
+### Image
+<img width="710" height="476" alt="Screenshot 2026-03-09 142400" src="https://github.com/user-attachments/assets/e9e001f9-dffc-4ac0-b3c6-ef69f07aece1" />
 
 ---
 
