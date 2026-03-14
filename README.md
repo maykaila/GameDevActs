@@ -77,6 +77,17 @@ This activity focuses on the enemies.
 
 ---
 
+## 🎮 Week 4 Activity 1: Basic 3D
+**Finished Date:** March 14, 2026
+
+### Description
+A basic 3D game. 
+
+### Video
+
+
+---
+
 ## 🏆 Credits
 
 ### 🎨 Visual & Audio Assets
