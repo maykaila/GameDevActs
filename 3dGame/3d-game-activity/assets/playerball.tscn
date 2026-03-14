@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bqx86kcbmkbnr"]
+
+[ext_resource type="PackedScene" uid="uid://v1mww7khv0uo" path="res://imports/playerball.gltf" id="1_qgeru"]
+[ext_resource type="ArrayMesh" uid="uid://bjl6p52w7ibeg" path="res://assets/playerball.tres" id="2_wj3j8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wj3j8"]
+
+[node name="playerball" unique_id=854177975 instance=ExtResource("1_qgeru")]
+
+[node name="Sphere" parent="." index="0" unique_id=75008840]
+mesh = ExtResource("2_wj3j8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1366165444]
+shape = SubResource("BoxShape3D_wj3j8")

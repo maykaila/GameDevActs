@@ -370,7 +370,7 @@ position = Vector2(307, 425)
 position = Vector2(648, 320)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=118934287]
-position = Vector2(-11, 186)
+position = Vector2(32, 137)
 shape = SubResource("WorldBoundaryShape2D_vwck2")
 debug_color = Color(0.99607843, 0.047058824, 0, 1)
 

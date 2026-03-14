@@ -213,7 +213,7 @@ shape = SubResource("CircleShape2D_tcy81")
 
 [node name="CoinPickupSound" type="AudioStreamPlayer2D" parent="." unique_id=1220161982]
 stream = ExtResource("3_leebs")
-bus = &"SFX"
+bus = &"Coins"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1687046755]
 libraries/ = SubResource("AnimationLibrary_0e5ap")
