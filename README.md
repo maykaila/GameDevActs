@@ -9,7 +9,8 @@
 3. [Week 2 - Activity 2](#-week-2-activity-2-level-design)
 4. [Week 3 - Activity 1](#-week-3-activity-1-uiux--audio)
 5. [Week 3 - Activity 2](#-week-3-activity-2-ai--enemies)
-6. [Credits](#credits)
+6. [Week 4 - Activity 1](#-week-4-activity-1-basic-3d)
+7. [Credits](#credits)
 
 ---
 
