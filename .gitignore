@@ -1,3 +1,15 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+
+# Ignore Android export binaries
+*.apk
+*.ap_
+*.aab
+
+# Ignore Keystores (CRITICAL for security)
+*.keystore
+
+# Ignore Godot's export configuration if it contains sensitive paths
+export_presets.cfg
