@@ -115,6 +115,19 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_eekkd")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_egvns")
 text = "Start"
 
+[node name="multiplayer" type="Button" parent="VBoxContainer" unique_id=142132437]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_n5p00")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_vh50t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_n5p00")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eekkd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_egvns")
+text = "Multiplayer"
+
 [node name="quit" type="Button" parent="VBoxContainer" unique_id=1628531340]
 layout_mode = 2
 size_flags_vertical = 3
@@ -128,4 +141,5 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_omfg1")
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/multiplayer" to="." method="_on_multiplayer_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_level_pressed"]

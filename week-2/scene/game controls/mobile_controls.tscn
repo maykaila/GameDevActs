@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bngmu0y2tdio5"]
+
+[ext_resource type="Texture2D" uid="uid://cidqedcwf4y86" path="res://assets/mobile controls/jumpClicked.png" id="1_3vyw7"]
+[ext_resource type="Script" uid="uid://dv0a00lebftjk" path="res://scripts/mobile_controls.gd" id="1_a6xid"]
+[ext_resource type="Texture2D" uid="uid://hqjrvvlueat1" path="res://assets/mobile controls/left.png" id="2_a6xid"]
+[ext_resource type="Texture2D" uid="uid://bebg2uae5rusa" path="res://assets/mobile controls/leftClicked.png" id="3_b10qe"]
+[ext_resource type="Texture2D" uid="uid://cnam2r3rpcowg" path="res://assets/mobile controls/right.png" id="4_s4rww"]
+[ext_resource type="Texture2D" uid="uid://dh6wxettcjcaq" path="res://assets/mobile controls/rightClicked.png" id="5_0f66s"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ibtdq"]
+load_path = "res://.godot/imported/jump.png-e81f990dab2386589e59c8627a4dd01a.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2t77"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g7w0q"]
+
+[node name="MobileControls" type="CanvasLayer" unique_id=1681773010]
+script = ExtResource("1_a6xid")
+
+[node name="ControlsContainer" type="Control" parent="." unique_id=398952611]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel3" type="Panel" parent="ControlsContainer" unique_id=588450866]
+layout_mode = 0
+offset_left = 1019.0
+offset_top = 536.0
+offset_right = 1109.0
+offset_bottom = 626.0
+
+[node name="Panel" type="Panel" parent="ControlsContainer" unique_id=161762990]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 535.0
+offset_right = 268.0
+offset_bottom = 625.0
+
+[node name="Panel2" type="Panel" parent="ControlsContainer" unique_id=1339125278]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 535.0
+offset_right = 144.0
+offset_bottom = 625.0
+
+[node name="jump" type="TouchScreenButton" parent="ControlsContainer" unique_id=1584884734]
+texture_filter = 1
+position = Vector2(1032.0001, 548)
+scale = Vector2(4, 4)
+texture_normal = SubResource("CompressedTexture2D_ibtdq")
+texture_pressed = ExtResource("1_3vyw7")
+shape = SubResource("RectangleShape2D_j2t77")
+action = "jump"
+
+[node name="left" type="TouchScreenButton" parent="ControlsContainer" unique_id=577130007]
+texture_filter = 1
+position = Vector2(67, 547.99994)
+scale = Vector2(4, 4)
+texture_normal = ExtResource("2_a6xid")
+texture_pressed = ExtResource("3_b10qe")
+shape = SubResource("RectangleShape2D_g7w0q")
+action = "moveleft"
+
+[node name="right" type="TouchScreenButton" parent="ControlsContainer" unique_id=645337075]
+texture_filter = 1
+position = Vector2(191, 547.99994)
+scale = Vector2(4, 4)
+texture_normal = ExtResource("4_s4rww")
+texture_pressed = ExtResource("5_0f66s")
+shape = SubResource("RectangleShape2D_g7w0q")
+action = "moveright"

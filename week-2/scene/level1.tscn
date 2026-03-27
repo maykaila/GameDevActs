@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://v3331cyf4782" path="res://scene/killzone.tscn" id="5_kjjd3"]
 [ext_resource type="PackedScene" uid="uid://byrcaqismg3kp" path="res://scene/endFlag.tscn" id="6_e6f45"]
 [ext_resource type="PackedScene" uid="uid://5j0fauh3kr0o" path="res://scene/level2.tscn" id="6_ldwqa"]
+[ext_resource type="PackedScene" uid="uid://bngmu0y2tdio5" path="res://scene/game controls/mobile_controls.tscn" id="7_ebr37"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nk78g"]
 texture = ExtResource("1_0a4uc")
@@ -249,3 +250,5 @@ shape = SubResource("WorldBoundaryShape2D_p1ry8")
 [node name="finish" parent="." unique_id=2045456078 instance=ExtResource("6_e6f45")]
 position = Vector2(1055, 257)
 target_level = ExtResource("6_ldwqa")
+
+[node name="MobileControls" parent="." unique_id=1681773010 instance=ExtResource("7_ebr37")]

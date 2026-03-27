@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dxddgccju4jy3" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_nluny"]
 [ext_resource type="PackedScene" uid="uid://dqv8fdoypkrxe" path="res://scene/player.tscn" id="3_lnov8"]
-[ext_resource type="PackedScene" uid="uid://6dx5righrfff" path="res://scene/level3.tscn" id="4_lnov8"]
+[ext_resource type="PackedScene" uid="uid://b65b3d1nwaavl" path="res://scene/mainmenu.tscn" id="4_vwck2"]
 [ext_resource type="PackedScene" uid="uid://de4dfesff4gvx" path="res://scene/spikes.tscn" id="5_nluny"]
 [ext_resource type="PackedScene" uid="uid://v3331cyf4782" path="res://scene/killzone.tscn" id="6_kj7ci"]
 [ext_resource type="PackedScene" uid="uid://byrcaqismg3kp" path="res://scene/endFlag.tscn" id="6_lnfv4"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cdgep76svl5v3" path="res://scene/saw.tscn" id="7_lnov8"]
 [ext_resource type="PackedScene" uid="uid://ccj1kv64ujbxc" path="res://scene/coin.tscn" id="9_yilmc"]
 [ext_resource type="PackedScene" uid="uid://jq2q2yd8gnov" path="res://scene/slime.tscn" id="10_epjhv"]
+[ext_resource type="PackedScene" uid="uid://bngmu0y2tdio5" path="res://scene/game controls/mobile_controls.tscn" id="11_vwck2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nk78g"]
 texture = ExtResource("1_nluny")
@@ -311,7 +312,7 @@ position_smoothing_enabled = true
 
 [node name="finish" parent="." unique_id=2010704233 instance=ExtResource("6_lnfv4")]
 position = Vector2(992, 225)
-target_level = ExtResource("4_lnov8")
+target_level = ExtResource("4_vwck2")
 
 [node name="platform" parent="." unique_id=1344716777 instance=ExtResource("6_lnov8")]
 position = Vector2(607, 437)
@@ -402,3 +403,5 @@ position = Vector2(856, 257)
 
 [node name="Slime2" parent="." unique_id=839303425 instance=ExtResource("10_epjhv")]
 position = Vector2(319, 320)
+
+[node name="MobileControls" parent="." unique_id=1681773010 instance=ExtResource("11_vwck2")]
